@@ -1,7 +1,7 @@
 <div class="container mt-3 py-4 px-5 plash">
     <div class="row admin__header">
         <div class="col-12 overflow">
-            <form action="/admin/add/status/" method="post">
+            <form action="/admin/add/status/" method="post" id="admin_form">
                 <legend class="mb-4">Добавить хакатон</legend>
                 <div class="form-group">
                     <label for="hack_name">Название хакатона</label>
@@ -37,6 +37,7 @@
                     </select>
                 </div>
                 <a href="/admin/" class="btn btn-outline-danger">Отмена</a>
+                <button class="btn btn-outline-warning" id="reset">Очистить форму</button>
                 <input class="btn btn-success ml-3" type="submit" value="Добавить хакатон">
             </form>
         </div>
