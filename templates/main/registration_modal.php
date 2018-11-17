@@ -12,6 +12,19 @@
                 <label for="password" class="col-5">Пароль</label>
                 <input name="password" type="text" class="col-7 py-2" id="password">
             </div>
+            <div class="d-flex mb-3">
+                <label for="password_again" class="col-5">Повторите пароль</label>
+                <input name="password_again" type="text" class="col-7 py-2" id="password_again">
+            </div>
+            <div class="d-flex mb-3">
+                <label for="name" class="col-5">Имя</label>
+                <input name="name" type="text" class="col-7 py-2" id="name">
+            </div>
+            <!-- Password -->
+            <div class="d-flex mb-3">
+                <label for="surname" class="col-5">Фамилия</label>
+                <input name="surname" type="text" class="col-7 py-2" id="surname">
+            </div>
             <!-- Buttons -->
             <div class="d-flex flex-column mt-5">
                 <input type="submit" class="col-12 mb-3 py-2">
