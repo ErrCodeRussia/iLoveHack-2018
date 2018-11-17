@@ -4,7 +4,7 @@ function main_index() {
     echo render('navigation.php');
 }
 
-function about_index() {
+function contacts_index() {
     echo render('navigation.php');
-    echo "about page";
+    echo "contacts page";
 }

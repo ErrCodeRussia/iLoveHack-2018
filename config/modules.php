@@ -21,7 +21,7 @@ var_dump($path);
 
 if (count($path) < 4) {
     $moduleName = empty($path[1]) ? 'main' : $path[1];
-    $action = empty($path[2]) ? 'index' : $path[2];
+    $action = empty($path[2]) ? 'index' : 'show';
 
     if ($path[1] == 'hackathons') {
         $moduleFilename = MODULES . 'hackathons.php';
@@ -29,6 +29,10 @@ if (count($path) < 4) {
     }
     else if ($path[1] == 'users') {
         $moduleFilename = MODULES . 'users.php';
+        $function = $moduleName . '_' . $action;
+    }
+    else if ($path[1] == 'admin') {
+        $moduleFilename = MODULES . 'admin.php';
         $function = $moduleName . '_' . $action;
     }
     else {
@@ -40,6 +44,12 @@ else {
     if ($path[1] == 'users') {
         $moduleName = $path[1];
         $action = empty($path[2]) ? 'index' : $path[2];
+    }
+    else if ($path[1] == 'admin') {
+        $moduleName = $path[1];
+        $action = 'index';
+        $moduleFilename = MODULES . 'admin.php';
+        $function = $moduleName . '_' . $action;
     }
     else {
         $module = empty($path[1]) ? 'main' : $path[1];
