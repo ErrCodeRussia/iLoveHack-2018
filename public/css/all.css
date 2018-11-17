@@ -1,0 +1,123 @@
+.page {
+  background: #0d151e;
+}
+
+.page__header {
+  width: 100%;
+  height: auto;
+  background: #0d151e;
+}
+
+.page__header .navbar {
+  background-color: #0d151e !important;
+}
+
+.page__footer {
+  margin-top: 50px;
+  padding: 50px 0;
+  background: #0d151e;
+}
+
+.page__section {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackathones__heading {
+  padding-top: 50px;
+}
+
+.hackathones__text {
+  color: #fefffe;
+  font-size: 20px;
+}
+
+.hackathones__line {
+  background: #fefffe;
+}
+
+.hackathones__item {
+  background-color: #fefffe;
+  color: #0d151e;
+  padding: 20px 25px;
+  border-radius: 5px;
+}
+
+.hackathones__item p {
+  margin: 0;
+}
+
+.hackathones__header h2 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.hackathones__maininfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.hackathones__OnlineStatus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.hackathones__status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackathones__statusRed, .hackathones__statusGreen, .hackathones__statusBlack, .hackathones__statusYellow {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin-left: 10px;
+}
+
+.hackathones__statusRed {
+  background-color: red;
+}
+
+.hackathones__statusBlack {
+  background-color: black;
+}
+
+.hackathones__statusYellow {
+  background-color: yellow;
+}
+
+.hackathones__statusGreen {
+  background-color: green;
+}
+
+.hackathones__shortdiscription {
+  margin-bottom: 15px;
+}
+
+.hackathones__dates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=all.css.map */

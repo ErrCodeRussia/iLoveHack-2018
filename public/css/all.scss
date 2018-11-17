@@ -1,0 +1,88 @@
+@import "data";
+.page{
+    background: $dark;
+    &__header{
+        width:100%;
+        height: auto;
+        background: #0d151e;
+        .navbar{
+            background-color: #0d151e !important;
+        }
+    }
+    &__footer{
+        margin-top: 50px;
+        padding: 50px 0;
+        background: #0d151e;
+    }
+    &__section{
+        padding: 50px 0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.hackathones{
+    &__heading{
+        padding-top: 50px;
+    }
+    &__text{
+        color: $white;
+        font-size: 20px;
+    }
+    &__line{
+        background: $white;
+    }
+    &__item{
+        background-color: $white;
+        color: $dark;
+        padding: 20px 25px;
+        border-radius: 5px;
+        p{
+            margin: 0;
+        }
+    }
+    &__header{
+        h2{
+            font-size: 22px;
+            margin: 0;            
+        }
+    }
+    &__maininfo{
+        display: flex;
+        margin-bottom: 15px;
+    }
+    &__OnlineStatus{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__status{
+        display: flex;
+        align-items: center;
+    }
+    &__statusRed, &__statusGreen, &__statusBlack, &__statusYellow{
+        width:15px;
+        height:15px;
+        border-radius: 100%;
+        margin-left: 10px;
+    }
+    &__statusRed{
+        background-color:red;
+    }
+    &__statusBlack{
+        background-color:black;
+    }
+    &__statusYellow{
+        background-color:yellow;
+    }
+    &__statusGreen{
+        background-color:green;
+    }
+    &__shortdiscription{
+        margin-bottom: 15px;
+    }
+    &__dates{
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,14 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .page {
-  background-image: url("/img/space1.jpg");
+  background-image: url("../img/space1.jpg");
   background-position: 0 0;
   background-size: cover;
   background-attachment: fixed;
-  color: #fefffe;
 }
 
 .page__header {
@@ -46,6 +40,12 @@
 
 .page__section--colored {
   background-color: #0d151e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #fefffe;
 }
 
 .section {
@@ -230,5 +230,6 @@
 .modal input {
   border: none;
   border-radius: 2px;
+  color: #0d151e;
 }
 /*# sourceMappingURL=style.css.map */

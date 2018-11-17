@@ -1,0 +1,44 @@
+.page {
+  background-image: url("../img/space1.jpg");
+  background-position: 0 0;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.page__header {
+  width: 100%;
+  height: auto;
+  background: #0d151e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.page__header .navbar {
+  background-color: #0d151e !important;
+  position: relative;
+  z-index: 10;
+}
+
+.page__footer {
+  margin-top: 50px;
+  padding: 50px 0;
+  background: #0d151e;
+}
+
+.page__section {
+  height: 100vh;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page__section--colored {
+  background-color: #0d151e;
+}
+/*# sourceMappingURL=main.css.map */

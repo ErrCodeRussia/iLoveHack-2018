@@ -1,0 +1,35 @@
+@import "data";
+.page{
+    background-image: url('../img/space1.jpg');
+    background-position: 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+    &__header{
+        width:100%;
+        height: auto;
+        background: #0d151e;
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 10;
+        .navbar{
+            background-color: #0d151e !important;
+            position: relative;
+            z-index: 10;
+        }
+    }
+    &__footer{
+        margin-top: 50px;
+        padding: 50px 0;
+        background: #0d151e;
+    }
+    &__section{
+        height:100vh;
+        padding: 50px 0;
+        display: flex;
+        align-items: center;
+    }
+    &__section--colored{
+        background-color: #0d151e;
+    }
+}
