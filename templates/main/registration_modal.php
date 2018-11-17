@@ -25,6 +25,9 @@
                 <label for="surname" class="col-5">Фамилия</label>
                 <input name="surname" type="text" class="col-7 py-2" id="surname">
             </div>
+
+            <a href="?registration=false" id="registration">Или войдите</a>
+
             <!-- Buttons -->
             <div class="d-flex flex-column mt-5">
                 <input type="submit" class="col-12 mb-3 py-2">

@@ -13,6 +13,9 @@
                 <input name="password" type="text" class="col-7 py-2" id="password">
             </div>
             <!-- Buttons -->
+
+            <a href="?registration=true" id="registration">Или зарегистрируйтесь</a>
+
             <div class="d-flex flex-column mt-5">
                 <input type="submit" class="col-12 mb-3 py-2">
                 <input type="reset" class="col-12 py-2">
