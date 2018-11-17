@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .page {
+    background-image: url("../img/space1.jpg");
+    background-position: 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .page__header {
+    width: 100%;
+    height: auto;
+    background: #0d151e;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .page__header .navbar {
+    background-color: #0d151e !important;
+  }
+  
+  .page__section {
+    height: 100vh;
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .page__section .section__heading {
+    margin-top: 56px;
+    width: auto;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    font-size: 24px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .page__section .section__text {
+    height: 50px;
+  }
+  
+  .page__section .section__text:before {
+    content: "<";
+    padding: 5px 20px;
+    border-left: 2px solid #fefffe;
+    border-top: 2px solid #fefffe;
+  }
+  
+  .page__section .section__text:after {
+    content: "/>";
+    padding: 5px 15px;
+    border-right: 2px solid #fefffe;
+    border-bottom: 2px solid #fefffe;
+  }
+  
+  .page__section--colored {
+    background-color: #0d151e;
+  }
+  /*# sourceMappingURL=style.css.map */
