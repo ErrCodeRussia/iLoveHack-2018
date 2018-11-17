@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $('#reset').on("click", function() {
-    $('form')[0].reset();
+        console.log($('#admin_form')[0]);
+    $('#admin_form')[0].reset();
 });
 });
 

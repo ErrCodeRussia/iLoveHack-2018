@@ -37,9 +37,10 @@
                     </select>
                 </div>
                 <a href="/admin/" class="btn btn-outline-danger">Отмена</a>
-                <button class="btn btn-outline-warning" id="reset">Очистить форму</button>
+                <span class="btn btn-outline-warning ml-3" id="reset">Очистить форму</span>
                 <input class="btn btn-success ml-3" type="submit" value="Добавить хакатон">
             </form>
+            
         </div>
     </div>
 </div>

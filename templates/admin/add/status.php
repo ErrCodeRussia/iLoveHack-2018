@@ -21,6 +21,12 @@ if (!empty($_POST)) {
         $hack_status = 3;
     }
 
-    $connection = get_connection();
+    var_dump($hack_name);
+    var_dump($hack_desc);
+    var_dump($hack_count);
+    var_dump($hack_maxcount);
+    var_dump($hack_start_date);
+    var_dump($hack_end_date);
+    var_dump($hack_status);
 
 }
