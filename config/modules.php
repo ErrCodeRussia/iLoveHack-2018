@@ -68,11 +68,11 @@ if (file_exists($moduleFilename)) {
         $function();
     }
     else {
-        echo render('navigation.php');
+        echo render('main/navigation.php');
         echo render('404.php');
     }
 }
 else {
-    echo render('navigation.php');
+    echo render('main/navigation.php');
     echo render('404.php');
 }
