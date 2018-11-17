@@ -17,7 +17,7 @@ else {
     $path = explode('/', $url);
 }
 
-//var_dump($path);
+var_dump($path);
 
 if (count($path) < 4) {
     $moduleName = empty($path[1]) ? 'main' : $path[1];

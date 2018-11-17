@@ -37,7 +37,7 @@
                         <td><?= $hackathons_array['hack_start_date']; ?></td>
                         <td><?= $hackathons_array['hack_end_date']; ?></td>
                         <td><?= check_status($hackathons_array['hack_status']); ?></td>
-                        <td><a href="">Изменить</a></td>
+                        <td><a href="/admin/edit/<?= $hackathons_array['hack_id']; ?>">Изменить</a></td>
                         <td><a href="">Удалить</a></td>
                     </tr>
                 <?php endwhile; ?>
