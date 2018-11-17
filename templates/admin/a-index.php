@@ -18,7 +18,7 @@
                 <tr class="bold">
                     <td>ID</td>
                     <td>Название</td>
-                    <td>Краткое описание</td>
+                    <td class="short-desc">Краткое описание</td>
                     <td>Участников сейчас</td>
                     <td>Участников максимально</td>
                     <td>Начало хакатона</td>
@@ -31,12 +31,12 @@
                     <tr>
                         <td><?= $hackathons_array['hack_id']; ?></td>
                         <td><?= $hackathons_array['hack_name']; ?></td>
-                        <td><?= $hackathons_array['hack_desc']; ?></td>
+                        <td class="short-desc"><?= $hackathons_array['hack_desc']; ?></td>
                         <td><?= $hackathons_array['hack_count']; ?></td>
                         <td><?= $hackathons_array['hack_maxcount']; ?></td>
                         <td><?= $hackathons_array['hack_start_date']; ?></td>
                         <td><?= $hackathons_array['hack_end_date']; ?></td>
-                        <td><?= $hackathons_array['hack_status']; ?></td>
+                        <td><?= check_status($hackathons_array['hack_status']); ?></td>
                         <td><a href="">Изменить</a></td>
                         <td><a href="">Удалить</a></td>
                     </tr>

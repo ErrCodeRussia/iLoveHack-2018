@@ -36,3 +36,7 @@
 .overflow {
     overflow: auto;
 }
+
+.short-desc {
+    max-width: 500px;
+}
