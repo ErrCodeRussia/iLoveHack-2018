@@ -1,0 +1,38 @@
+.page {
+    background-color: #0D151E;
+}
+
+.plash {
+    background-color: #fefffe;
+    height: auto;
+}
+
+.navbar-brand {
+    color: #feffef;
+    padding-left: 20px;
+}
+
+.nav-link {
+    color: #E6E6E6;
+    margin: 0px;
+}
+
+.navbar {
+    padding: 0px 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 80%;
+}
+
+.admin-top {
+    padding-top: 10px;
+}
+
+.overflow {
+    overflow: auto;
+}
