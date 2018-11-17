@@ -27,7 +27,7 @@
     <?php if ($path[1] == 'admin') : ?>
         <link rel="stylesheet" href="/css/admin.css">
         <script src="/js/formReset.js"></script>
-    <?php else if (!$path[1]) : ?>
+    <?php elseif (!$path[1]) : ?>
         <link rel="stylesheet" href="/css/style.css"> 
     <?php else : ?>
         <link rel="stylesheet" href="/css/all.css">

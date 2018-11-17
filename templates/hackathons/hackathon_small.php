@@ -1,15 +1,4 @@
-<div>
-    <p><?= check_status($params['hack_status']); ?></p>
-    <h2><?= $params['hack_name']; ?></h2>
-    <p>О хакатоне:<br><?= $params['hack_desc']; ?></p>
-    <p>Дата проведения: <?= date_transform($params['hack_start_date']); ?> - <?= date_transform($params['hack_end_date']); ?></p>
-    <p>Участники: <?= $params['hack_count']; ?>/<?= $params['hack_maxcount']; ?></p>
-    <p>
-        <a href="/hackathons/<?= $params['hack_id']; ?>">Подробнее</a>
-    </p>
-</div>
-
-<div class="row hackathones__list">
+<div class="row hackathones__list mb-3">
     <div class="col-12">
         <div class="hackathones__item">
             <div class="hackathones__maininfo">
@@ -18,11 +7,15 @@
                         <h2><?= $params['hack_name']; ?></h2>
                         <div class="hackathones__status col-12 p-0 mt-3">
                             <p class="hackathones__placeCount">Участники: <?= $params['hack_count']; ?>/<?= $params['hack_maxcount']; ?></p>
-                            <?= check_status($params['hack_status']); ?>
-                            <span class="hackathones__statusBlack" data-toggle="tooltip" data-placement="top" title="Не начался"></span>
-                            <span class="hackathones__statusYellow" data-toggle="tooltip" data-placement="top" title="Идет регистрация"></span>
-                            <span class="hackathones__statusGreen" data-toggle="tooltip" data-placement="top" title="Проводится"></span>
-                            <span class="hackathones__statusRed" data-toggle="tooltip" data-placement="top" title="Завершился"></span>
+                            <?php if ($params['hack_status'] == 0) : ?>
+                                <span class="hackathones__statusBlack" data-toggle="tooltip" data-placement="top" title="Не начался"></span>
+                            <?php elseif ($params['hack_status'] == 1) : ?>
+                                <span class="hackathones__statusYellow" data-toggle="tooltip" data-placement="top" title="Идет регистрация"></span>
+                            <?php elseif ($params['hack_status'] == 2) : ?>
+                                <span class="hackathones__statusGreen" data-toggle="tooltip" data-placement="top" title="Проводится"></span>
+                            <?php elseif ($params['hack_status'] == 3) : ?>
+                                <span class="hackathones__statusRed" data-toggle="tooltip" data-placement="top" title="Завершился"></span>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -32,7 +25,7 @@
             </div>
             <div class="hackathones__dates col-12">
                 <p><strong>Дата проведения: <?= date_transform($params['hack_start_date']); ?> - <?= date_transform($params['hack_end_date']); ?></strong></p>
-                <a href="">Подробнее...</a>
+                <a href="/hackathons/<?= $params['hack_id']; ?>">Подробнее...</a>
             </div>
         </div>
     </div>

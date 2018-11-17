@@ -5,7 +5,7 @@
                 <legend class="mb-4">Добавить хакатон</legend>
                 <div class="form-group">
                     <label for="hack_name">Название хакатона</label>
-                    <input name="hack_name" type="text" class="form-control" id="hack_name" placeholder="Максимум 100 символов" required pattern="[A-Za-z_]{1,100}">
+                    <input name="hack_name" type="text" class="form-control" id="hack_name" placeholder="Максимум 100 символов" required pattern="[1-9A-Za-z_]{1,100}">
                 </div>
                 <div class="form-group">
                     <label for="short_description">Краткое описание</label>

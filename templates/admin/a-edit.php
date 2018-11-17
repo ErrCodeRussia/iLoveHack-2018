@@ -22,7 +22,7 @@
                 <legend class="mb-4">Изменить хакатон</legend>
                 <div class="form-group">
                     <label for="hack_name">Название хакатона</label>
-                    <input name="hack_name" type="text" class="form-control" value="<?= $hackathon['hack_name'] ?>" id="hack_name" placeholder="Максимум 100 символов" required pattern="[A-Za-z_]{1,100}">
+                    <input name="hack_name" type="text" class="form-control" value="<?= $hackathon['hack_name'] ?>" id="hack_name" placeholder="Максимум 100 символов" required pattern="[0-9A-Za-z_]{1,100}">
                 </div>
                 <div class="form-group">
                     <label for="short_description">Краткое описание</label>
@@ -57,7 +57,6 @@
                 <span class="btn btn-outline-warning ml-3" id="reset">Очистить форму</span>
                 <input class="btn btn-success ml-3" type="submit" value="Сохранить хакатон">
             </form>
-            
         </div>
     </div>
 </div>

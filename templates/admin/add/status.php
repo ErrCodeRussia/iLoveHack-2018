@@ -1,6 +1,7 @@
 <div class="container mt-3 py-4 px-5 plash">
-    <div class="row admin__header">
-        <div class="col-12 overflow">
+<div class="row admin__header">
+<div class="col-12 overflow">
+
 <?php
 
 if (!empty($_POST)) {
@@ -46,9 +47,11 @@ if (!empty($_POST)) {
 
     if ($status && $status_new_table) {
         echo "Хакатон успешно добавлен!";
+        header("Refresh: 1; url=/admin/");
     }
     else {
         echo "Ошибка при добавлении хакатона!";
+        header("Refresh: 3; url=/admin/");
     }
 
 }
@@ -58,6 +61,6 @@ else {
 
 ?>
 
-        </div>
-    </div>
+</div>
+</div>
 </div>
