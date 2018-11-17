@@ -4,6 +4,7 @@ if (!empty($_POST)) {
     
     $hack_name = $_POST['hack_name'];
     $hack_desc = $_POST['hack_desc'];
+    $hack_full_desc = $_POST['hack_full_desc'];
     $hack_count = 0;
     $hack_maxcount = $_POST['hack_maxcount'];
     $hack_start_date = $_POST['hack_start_date'];
@@ -21,12 +22,31 @@ if (!empty($_POST)) {
         $hack_status = 3;
     }
 
-    var_dump($hack_name);
-    var_dump($hack_desc);
-    var_dump($hack_count);
-    var_dump($hack_maxcount);
-    var_dump($hack_start_date);
-    var_dump($hack_end_date);
-    var_dump($hack_status);
+    $connection = get_connection();
+    
+    $get_last_string = mysqli_query($connection, "SELECT * FROM `hackathons` ORDER BY `hack_id` DESC LIMIT 1");
+    $last_string_array = mysqli_fetch_array($get_last_string);
+    $last_index = $last_string_array['hack_id'];
+    $last_index++;
+
+    $create_table_status = mysqli_query($connection, "CREATE TABLE $hack_name 
+    (
+        hack_id INT NOT NULL PRIMARY KEY,
+        hack_teams TEXT,
+        hack_scores TEXT
+    );");
+    
+    if ($create_table_status == true) {
+        $status_new_table = mysqli_query($connection, "INSERT INTO `$hack_name` (`hack_id`, `hack_teams`, `hack_scores`) VALUES ('$last_index', NULL, NULL);");
+        $status = mysqli_query($connection, "INSERT INTO `hackathons` (`hack_id`, `hack_name`, `hack_desc`, `hack_full_desc`, `hack_count`, `hack_maxcount`, `hack_start_date`, `hack_end_date`, `hack_status`) VALUES (NULL, '$hack_name', '$hack_desc', '$hack_full_desc', '$hack_count', '$hack_maxcount', '$hack_start_date', '$hack_start_date', '$hack_status');");
+    }
+
+    if ($status && $status_new_table) {
+        echo "Хакатон успешно добавлен!";
+    }
+    else {
+        echo "Ошибка при добавлении хакатона!";
+    }
+
 
 }
