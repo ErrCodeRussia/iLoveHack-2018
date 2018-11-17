@@ -1,3 +1,6 @@
+<div class="container mt-3 py-4 px-5 plash">
+    <div class="row admin__header">
+        <div class="col-12 overflow">
 <?php
 
 if (!empty($_POST)) {
@@ -48,5 +51,13 @@ if (!empty($_POST)) {
         echo "Ошибка при добавлении хакатона!";
     }
 
-
 }
+else {
+    echo "Ошибка: форма была пустая!";
+}
+
+?>
+
+        </div>
+    </div>
+</div>
