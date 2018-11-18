@@ -1,6 +1,6 @@
 <?php
 
-if (empty($_POST)) {
+if (!empty($_POST)) {
     $user_login = $_POST['user_login'];
     $user_password = $_POST['user_password'];
 
@@ -14,7 +14,8 @@ if (empty($_POST)) {
             $_SESSION['user_password'] = $user_password;
             $_SESSION['user_name'] = $user_info['user_name'];
             $_SESSION['user_surname'] = $user_info['user_surname'];
-            var_dump($_SESSION);
+            //var_dump($_SESSION);
+            header("Refresh: 1; url=/users/$user_login/");
         }
         else {
             echo "Вы ввели неверный пароль!";
