@@ -2,29 +2,27 @@
 <div class="row admin__header">
 <div class="col-12 overflow">
 
-<form class="modal__form col-12" action="/users/auth/">
+<form method="POST" class="form form__auth" action="/users/auth/status/">
     <h4>Вход</h4>
-    <img class="modal__close mb-3 p-2" id="close" src="img/close.svg" alt="">
-    <!-- Login -->
-    <div class="d-flex mb-3">
-        <label for="login" class="col-5">Логин</label>
-        <input name="login" type="text" class="col-7 py-2" id="login">
+    <hr class="form__line">
+    <div class="form-group">
+        <label for="login">Логин: </label>
+        <input name="user_login" type="text" class="form-control" id="login" aria-describedby="emailHelp" placeholder="Введите логин">
     </div>
-    <!-- Password -->
-    <div class="d-flex mb-3">
-        <label for="password" class="col-5">Пароль</label>
-        <input name="password" type="text" class="col-7 py-2" id="password">
+    <div class="form-group">
+        <label for="password">Пароль: </label>
+        <input name="user_password" type="password" class="form-control" id="password" placeholder="Введите пароль">
     </div>
-    <!-- Buttons -->
 
-    <a href="/users/reg/" id="registration">Или зарегистрируйтесь</a>
-
-    <div class="d-flex flex-column mt-5">
-        <input type="submit" class="col-12 mb-3 py-2">
-        <input type="reset" class="col-12 py-2">
+    <a class="badge badge-light" href="/users/reg/" id="registration">Или зарегистрируйтесь</a>
+    <div class="d-flex mt-3 flex-wrap">
+        <input name="auth_submit" type="submit" class="btn btn-outline-success" value="Отправить">
+        <input type="reset" class="btn btn-outline-warning" value="Очистить форму">
+        <input name="back" type="button" class="btn btn-outline-danger" value="Назад">
     </div>
 </form>
 
 </div>
 </div>
 </div>
+

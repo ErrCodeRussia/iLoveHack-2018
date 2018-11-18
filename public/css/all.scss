@@ -140,3 +140,14 @@
         height: 100px;
     }
 }
+
+.form{
+    color: $white;
+    input[type="submit"], input[type="reset"], input[type="button"]{
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    &__line{
+        background: $white;
+    }
+}
