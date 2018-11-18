@@ -7,11 +7,11 @@
     <hr class="form__line">
     <div class="form-group">
         <label for="login">Логин: </label>
-        <input name="user_login" type="text" class="form-control" id="login" placeholder="Введите логин">
+        <input name="user_login" type="text" class="form-control" id="login" placeholder="Введите логин" required>
     </div>
     <div class="form-group">
         <label for="password">Пароль: </label>
-        <input name="user_password" type="password" class="form-control" id="password" placeholder="Введите пароль">
+        <input name="user_password" type="password" class="form-control" id="password" placeholder="Введите пароль" required>
     </div>
 
     <a class="badge badge-light" href="/users/reg/" id="registration">Или зарегистрируйтесь</a>

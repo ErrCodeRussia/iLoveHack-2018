@@ -1,8 +1,8 @@
 <?php
 
 if (!empty($_POST)) {
-    $user_login = $_POST['user_login'];
-    $user_password = $_POST['user_password'];
+    $user_login = htmlspecialchars(trim($_POST['user_login']));
+    $user_password = htmlspecialchars(trim(md5($_POST['user_password'])));
 
     $connection = get_connection();
 

@@ -7,19 +7,19 @@
     <hr class="form__line">
     <div class="form-group">
         <label for="user_login">Логин: </label>
-        <input name="user_login" type="text" class="form-control" id="user_login" placeholder="Введите логин">
+        <input name="user_login" type="text" class="form-control" id="user_login" placeholder="Введите логин" required>
     </div>
     <div class="form-group">
         <label for="user_password">Пароль: </label>
-        <input name="user_password" type="password" class="form-control" id="user_password" placeholder="Введите пароль">
+        <input name="user_password" type="password" class="form-control" id="user_password" placeholder="Введите пароль" required>
     </div>
     <div class="form-group">
         <label for="user_name">Имя: </label>
-        <input name="user_name" type="password" class="form-control" id="user_name" placeholder="Введите имя">
+        <input name="user_name" type="text" class="form-control" id="user_name" placeholder="Введите имя" required>
     </div>
     <div class="form-group">
         <label for="user_surname">Фамилия: </label>
-        <input name="user_surname" type="password" class="form-control" id="user_surname" placeholder="Введите фамилию">
+        <input name="user_surname" type="text" class="form-control" id="user_surname" placeholder="Введите фамилию" required>
     </div>
 
     <a class="badge badge-light" href="/users/auth/" id="registration">Есть аккаунт? авторизируйтесь!</a>

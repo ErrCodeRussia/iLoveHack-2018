@@ -31,18 +31,17 @@ if (count($path) < 4) {
         $moduleFilename = MODULES . 'main.php';
         $function = $moduleName . '_' . $action;
     }
-
-    var_dump($moduleFilename);
-    var_dump($function);
 }
 else {
     if ($path[1] == 'users') {
         if (($path[2] == 'auth' || $path[2] == 'reg') && $path[3] == 'status') {
-            $module = $path[2];
+            $module = $path[1];
+            $moduleName = $path[2];
             $action = $path[3];
 
             if ($module && $action) {
-                echo render('users/' . $module . '/' . $action . '.php');
+                $moduleFilename = MODULES . 'users.php';
+                $function = $module . '_' . $moduleName . '_' . $action;
             }
             else {
                 echo "Страницы не существует!";
