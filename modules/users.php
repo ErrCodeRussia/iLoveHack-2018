@@ -2,7 +2,7 @@
 
 function users_index() {
     echo render('main/navigation.php');
-    echo render('users/u-index.php');
+    echo render('users/u-list.php');
 }
 
 function users_reg() {
@@ -17,5 +17,5 @@ function users_auth() {
 
 function users_userpage() {
     echo render('main/navigation.php');
-    echo render('users/userpage/up-index.php');
+    echo render('users/u-index.php');
 }

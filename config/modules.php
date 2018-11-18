@@ -48,10 +48,9 @@ else {
         else {
             $action = 'userpage';
         }
-        
+
         $moduleFilename = MODULES . 'users.php';
         $function = $moduleName . '_' . $action;
-        var_dump($function);
     }
     else if ($path[1] == 'admin') {
         $moduleName = $path[1];
