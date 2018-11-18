@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-12 d-flex flex-column">
                     <h1 class="section__text">iLoveHack</h1>
-                    <a href="?form=registration" class="section__button" id="modal__button">Регистрация</a> 
+                    <button class="section__button" id="modal__button">Регистрация</button> 
                 </div>  
             </div>         
         </div>
