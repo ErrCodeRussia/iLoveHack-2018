@@ -13,6 +13,7 @@ function main_index() {
 
 function teams_index() {
     echo render('main/navigation.php');
+    echo render('team-list/teams-list.php');
 }
 
 function contacts_index() {

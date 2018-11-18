@@ -37,23 +37,36 @@ if (count($path) < 4) {
 }
 else {
     if ($path[1] == 'users') {
-        $moduleName = $path[1];
-        
-        if (empty($path[2])) {
-            $action = 'index';
-        }
-        else if ($path[2] == 'reg') {
-            $action = 'reg';
-        }
-        else if ($path[2] == 'auth') {
-            $action = 'auth';
+        if (($path[2] == 'auth' || $path[2] == 'reg') && $path[3] == 'status') {
+            $module = $path[2];
+            $action = $path[3];
+
+            if ($module && $action) {
+                echo render('users/' . $module . '/' . $action . '.php');
+            }
+            else {
+                echo "Страницы не существует!";
+            }
         }
         else {
-            $action = 'userpage';
-        }
+            $moduleName = $path[1];
+            
+            if (empty($path[2])) {
+                $action = 'index';
+            }
+            else if ($path[2] == 'reg') {
+                $action = 'reg';
+            }
+            else if ($path[2] == 'auth') {
+                $action = 'auth';
+            }
+            else {
+                $action = 'userpage';
+            }
 
-        $moduleFilename = MODULES . 'users.php';
-        $function = $moduleName . '_' . $action;
+            $moduleFilename = MODULES . 'users.php';
+            $function = $moduleName . '_' . $action;
+        }
     }
     else if ($path[1] == 'admin') {
         $moduleName = $path[1];

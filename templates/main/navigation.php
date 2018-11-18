@@ -21,7 +21,16 @@
                     <a class="nav-link" href="/contacts/">Контакты</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/users/admin/">Личный кабинет</a>
+                    <?php if ($_SESSION['user_login'] && $_SESSION['user_password']) : ?>
+                        <a class="nav-link" href="/users/<?= $_SESSION['user_login'] ?>/">Личный кабинет</a>
+                    <?php else : ?>
+                        <a class="nav-link" href="/users/auth/">Вход</a>
+                    <?php endif; ?>
+                </li>
+                <li class="nav-item">
+                    <?php if ($_SESSION['user_login'] && $_SESSION['user_password']) : ?>
+                        <a class="nav-link text-danger" href="/users/<?= $_SESSION['user_login'] ?>/logout/">Выход</a>
+                    <?php endif; ?>
                 </li>
             </ul>
         </div>
