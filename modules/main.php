@@ -11,6 +11,10 @@ function main_index() {
     echo render('main/footer.php');
 }
 
+function teams_index() {
+    echo render('main/navigation.php');
+}
+
 function contacts_index() {
     echo render('main/navigation.php');
     echo "contacts page";
