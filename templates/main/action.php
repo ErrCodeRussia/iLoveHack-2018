@@ -7,7 +7,7 @@
                         <h2 class="">Пора стать участником соревнований или создать свою команду</h2>
                     </div>
                     <div class="col-12 col-md-7 offset-md-3">
-                        <button class="section__button" id="modal__button2">Присоединиться</button> 
+                        <a href="/users/reg/" class="section__button" id="modal__button2">Присоединиться</a> 
                     </div>
                 </div>
             </div>
