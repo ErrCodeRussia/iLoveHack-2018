@@ -7,7 +7,7 @@
     <hr class="form__line">
     <div class="form-group">
         <label for="login">Логин: </label>
-        <input name="user_login" type="text" class="form-control" id="login" aria-describedby="emailHelp" placeholder="Введите логин">
+        <input name="user_login" type="text" class="form-control" id="login" placeholder="Введите логин">
     </div>
     <div class="form-group">
         <label for="password">Пароль: </label>
