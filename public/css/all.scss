@@ -158,3 +158,19 @@ table{
         font-size: 24px;
     }
 }
+
+.error{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    &__img{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 15px;
+    }
+    &__heading{
+        color: $white;
+        font-size: 24px;
+    }
+}
