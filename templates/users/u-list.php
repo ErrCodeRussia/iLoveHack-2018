@@ -1,3 +1,11 @@
+<?php
+
+    $connection = get_connection();
+
+    $users = mysqli_query($connection, "SELECT * FROM `users`");
+
+?>
+
 <div class="container">
     <div class="row mt-5">
 
@@ -7,20 +15,21 @@
                 <caption class="table__heading">Список пользователей: </caption>
                 <thead>
                     <tr>
-                        <th scope="col">Логин пользователя</th>
-                        <th scope="col">Имя пользователя</th>
-                        <th scope="col">Фамилия пользователя</th>
-                        <th scope="col">Количество очков</th>
+                        <th scope="col">Логин</th>
+                        <th scope="col">Имя</th>
+                        <th scope="col">Фамилия</th>
+                        <th scope="col">Очки</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Выводишь циклом эту строку -->
-                    <tr>
-                        <th>UserLogin</th>
-                        <td>UserName</td>
-                        <td>UserSurname</td>
-                        <td>UserScore</td>
-                    </tr>
+                    <?php while ($users_array = mysqli_fetch_array($users)) : ?>
+                        <tr>
+                            <th><?= $users_array['user_login']; ?></th>
+                            <td><?= $users_array['user_name']; ?></td>
+                            <td><?= $users_array['user_surname']; ?></td>
+                            <td><?= $users_array['user_score']; ?></td>
+                        </tr>
+                    <?php endwhile; ?>
                 </tbody>
             </table>
         </div>
