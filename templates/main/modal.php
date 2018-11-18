@@ -1,4 +1,4 @@
-<?php if($_GET["form"]=="registration") : ?>
+<?php if($_GET["form"]=="autorisation") : ?>
 
 <div class="modal modal__registration" id="modal">
     <div class="modal__block">
@@ -27,7 +27,7 @@
     </div>
 </div>
 
-<?php elseif($_GET["form"]=="autorisation") : ?>
+<?php elseif($_GET["form"]=="registration") : ?>
 
 <div class="modal modal__registration" id="modal">
     <div class="modal__block">
@@ -54,7 +54,7 @@
             </div>
             <!-- Buttons -->
 
-            <a class="mx-auto" href="?form=autorisation" id="registration">Или авторизируйтесь</a>
+            <a class="mx-auto" href="?form=autorisation" id="autorisation">Или авторизируйтесь</a>
 
             <div class="d-flex flex-column mt-5">
                 <input type="submit" class="col-12 mb-3 py-2">
