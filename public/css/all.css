@@ -194,6 +194,40 @@ table .col {
   font-size: 24px;
 }
 
+.full__hackathon {
+  color: #fefffe;
+}
+
+.full__hackathon__button {
+  margin: 15px 10px;
+  height: 50px;
+  width: auto;
+}
+
+.full__hackathon__statusRed {
+  background-color: red;
+}
+
+.full__hackathon__statusBlack {
+  background-color: black;
+}
+
+.full__hackathon__statusYellow {
+  background-color: yellow;
+}
+
+.full__hackathon__statusGreen {
+  background-color: green;
+}
+
+.full__hackathon__statusRed, .full__hackathon__statusGreen, .full__hackathon__statusBlack, .full__hackathon__statusYellow {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin-right: 10px;
+  border: 1px solid grey;
+}
+
 .error {
   display: -webkit-box;
   display: -ms-flexbox;
