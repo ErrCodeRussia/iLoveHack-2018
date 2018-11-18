@@ -59,6 +59,7 @@ else if ($path[3] == 'settings') {
                 <img class="user__avatar border <?= $padding; ?>" src="<?= $user_avatar; ?>" alt="У вас нет аватарки!">
                 <h3 class="mt-3 ml-2"><?= $user['user_name']; ?> <?= $user['user_surname']; ?></h3>
                 <h4 class="ml-2">@<?= $user['user_login']; ?></h4>
+                <h4 class="ml-2"><?= $user['user_status']; ?></h4>
             </div>
             <div class="col-12 col-md-7 offset-md-0 user__statistic text-left">
                 <ul class="nav nav-pills nav-fill mb-5">
