@@ -7,15 +7,7 @@ var CLOSE_FRAME = "#modal";
 console.log("вход в функцию");
 
 $(document).ready(function () {
-    console.log("вход в ready функцию");
-    $(BUTTON).on("click", function () {
-        console.log("вход в click функцию");
-        $(CLOSE_FRAME).css("display", "flex");
-    });
     $(CLOSE).on("click", function () {
-        $(CLOSE_FRAME).css("display", "none");
-    });
-    $(BUTTON2).on("click", function () {
-        $(BUTTON).trigger("click");
+        window.location.href = "/";
     });
 });
