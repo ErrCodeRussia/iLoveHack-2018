@@ -36,4 +36,4 @@ if (!empty($_POST)) {
 
 </div>
 </div>
-</div>
+</section>

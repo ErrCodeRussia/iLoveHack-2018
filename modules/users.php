@@ -29,3 +29,8 @@ function users_userpage() {
     echo render('main/navigation.php');
     echo render('users/u-index.php');
 }
+
+function access_error() {
+    echo render('main/navigation.php');
+    echo render('users/u-access-error.php');
+}
