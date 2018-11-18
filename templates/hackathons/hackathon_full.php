@@ -26,7 +26,8 @@
         </div>
         <!-- IF BEGIN -->
         <div class="row">
-            <div class="col-12 d-flex justify-content-end">
+            <div class="col-12 d-flex flex-wrap justify-content-end">
+                <a href="/hackathones/" class="btn btn-dark full__hackathon__button ">Назад</a>
                 <input type="button" class="btn btn-dark full__hackathon__button" value="Регистрация">
                 <!-- Регистрация -->
                 <label for="file"><button class="btn btn-dark full__hackathon__button">Загрузить файлы</button></label>
