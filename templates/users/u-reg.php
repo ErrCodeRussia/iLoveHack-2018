@@ -2,7 +2,7 @@
 <div class="row admin__header">
 <div class="col-12 overflow">
 
-<form class="modal__form col-12" action="/users/reg/">
+<form class="modal__form col-12" action="/users/reg/status/">
     <h4>Регистрация</h4>
     <img class="modal__close mb-3 p-2" id="close" src="img/close.svg" alt="">
     <!-- Login -->
