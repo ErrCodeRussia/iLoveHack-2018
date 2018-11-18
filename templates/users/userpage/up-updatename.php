@@ -13,15 +13,17 @@ if (!empty($_POST)) {
     $update_data = mysqli_query($connection, "UPDATE `users` SET `user_name`='$user_name',`user_surname`='$user_surname' WHERE `user_id` LIKE $user_id");
 
     if ($update_data) {
-        echo "Данные успешно изменены!";
+        echo "<p class='bg-success text-white px-1 px-2'>Данные успешно изменены!</p>";
         header("Refresh: 1; url=/users/$user_login/settings/");
     }
     else {
-        echo "Ошибка при изменении данных";
+        echo "<p class='bg-danger px-1 px-2'>Ошибка при изменении данных!</p>";
+        header("Refresh: 2; url=/users/$user_login/settings/");
     }
 }
 else {
-    echo "Ошибка: форма была пустая!";
+    echo "<p class='bg-danger px-1 px-2'>Ошибка: форма была пустая!</p>";
+    header("Refresh: 2; url=/users/$user_login/settings/");
 }
 
 ?>

@@ -1,6 +1,8 @@
-<section class="section user user__section mt-1">
 <div class="container">
-<div class="row">
+<div class="row error">
+<div class="col-12 d-flex flex-column text-center">
+<img class="error__img mx-auto" src="/img/close.svg" alt="">
+<h2 class="error__heading">
 
 <?php
 
@@ -20,8 +22,8 @@ if (!empty($_POST)) {
             $_SESSION['user_name'] = $user_info['user_name'];
             $_SESSION['user_surname'] = $user_info['user_surname'];
             //var_dump($_SESSION);
-            echo "Вы успешно авторизовались!";
-            header("Refresh: 1; url=/users/$user_login/");
+            
+            header("Location: /users/$user_login/");
         }
         else {
             echo "Вы ввели неверный пароль!";
@@ -37,6 +39,7 @@ else {
 
 ?> 
 
+</h2>
 </div>
 </div>
-</section>
+</div>
