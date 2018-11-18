@@ -86,3 +86,57 @@
         justify-content: space-between;
     }
 }
+
+.user{
+    .row{
+        background: $white;
+        padding: 25px 0 25px 0;
+        margin-bottom: 25px;
+    }
+    &__avatar{
+        max-width: 280px;
+        height: 280px;
+    }
+    &__statistic{
+        color:$white;
+        p{
+            background: $white;
+            color: $dark;
+            padding:5px 10px;
+            border-radius: 2px;
+        }
+    }
+}
+
+.data{
+    &__heading{
+        text-align: center;
+        margin-bottom: 50px;
+        color:$dark;
+    }
+    label{
+        color:$dark;
+    }
+    input[type="text"]{
+        margin-bottom:10px;
+    }
+    input[type="submit"]{
+        margin-top:25px;
+    }
+}
+
+.command{
+    &__heading{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__user{
+        width: 100px;
+        height: 100px;
+        margin: 0 25px 50px 0;
+    }
+    &__avatar{
+        width: 100px;
+        height: 100px;
+    }
+}
