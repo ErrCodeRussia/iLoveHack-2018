@@ -14,13 +14,13 @@ if (!empty($_POST)) {
     $user_surname = htmlspecialchars(trim($_POST['user_surname']));
     
     $connection = get_connection();
-    $check_user_login = mysqli_query($connection, "SELECT * FROM `users` WHERE `user_login` LIKE '$user_login'");
+    $check_user_login = mysqli_fetch_array(mysqli_query($connection, "SELECT * FROM `users` WHERE `user_login` LIKE '$user_login'"));
     if ($check_user_login) {
         echo "Пользователь с таким логином уже существует!";
         header("Refresh: 2; url=/users/reg/");
     }
     else {
-        $query = "INSERT INTO `users` (`id`, `user_login`, `user_password`, `user_name`, `user_surname`, `user_picture`, `team_id`, `user_score`) VALUES (NULL, '$user_login', '$user_password', '$user_name', '$user_surname', NULL, NULL, '0')";
+        $query = "INSERT INTO `users` (`user_login`, `user_password`, `user_name`, `user_surname`) VALUES ('$user_login', '$user_password', '$user_name', '$user_surname')";
         $status = mysqli_query($connection, $query);
         
         if ($status) {
