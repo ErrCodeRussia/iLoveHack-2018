@@ -9,6 +9,8 @@
         $path = explode('/', $url);
     }
 
+    session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -34,8 +36,6 @@
     <?php else : ?>
         <link rel="stylesheet" href="/css/all.css">
     <?php endif; ?>
-    
-    
     
     <script src="/js/script.js"></script>
 
