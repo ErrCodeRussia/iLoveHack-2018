@@ -104,6 +104,9 @@
   background: #4E34AF;
   border: none;
   border-radius: 2px;
+  color: #fefffe;
+  text-decoration: none;
+  text-align: center;
 }
 
 .hackatone {

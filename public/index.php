@@ -36,8 +36,6 @@
     <?php else : ?>
         <link rel="stylesheet" href="/css/all.css">
     <?php endif; ?>
-    
-    <script src="/js/script.js"></script>
 
     <title><?= get_title(); ?></title>
 </head>
