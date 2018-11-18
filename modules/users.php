@@ -2,5 +2,5 @@
 
 function users_index() {
     echo render('main/navigation.php');
-    echo "users page";
+    echo render('users/u-index.php');
 }
