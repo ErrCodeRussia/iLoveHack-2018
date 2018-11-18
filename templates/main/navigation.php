@@ -12,10 +12,16 @@
                     <a class="nav-link" href="/hackathons/">Хакатоны</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="/teams/">Команды</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/users/">Участники</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="/contacts/">Контакты</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/users/">Личный кабинет</a>
+                    <a class="nav-link" href="/users/admin/">Личный кабинет</a>
                 </li>
             </ul>
         </div>
