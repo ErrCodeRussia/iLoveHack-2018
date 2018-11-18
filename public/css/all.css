@@ -176,4 +176,17 @@
   width: 100px;
   height: 100px;
 }
+
+.form {
+  color: #fefffe;
+}
+
+.form input[type="submit"], .form input[type="reset"], .form input[type="button"] {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.form__line {
+  background: #fefffe;
+}
 /*# sourceMappingURL=all.css.map */
