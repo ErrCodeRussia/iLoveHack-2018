@@ -14,3 +14,7 @@ function users_auth() {
     echo render('main/navigation.php');
     echo render('users/u-auth.php');
 }
+
+function users_userpage() {
+    echo render('main/navigation.php');
+}

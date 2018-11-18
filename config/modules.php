@@ -35,9 +35,23 @@ if (count($path) < 4) {
 else {
     if ($path[1] == 'users') {
         $moduleName = $path[1];
-        $action = empty($path[2]) ? 'index' : $path[2];
+        
+        if (empty($path[2])) {
+            $action = 'index';
+        }
+        else if ($path[2] == 'reg') {
+            $action = 'reg';
+        }
+        else if ($path[2] == 'auth') {
+            $action = 'auth';
+        }
+        else {
+            $action = 'userpage';
+        }
+        
         $moduleFilename = MODULES . 'users.php';
         $function = $moduleName . '_' . $action;
+        var_dump($function);
     }
     else if ($path[1] == 'admin') {
         $moduleName = $path[1];
