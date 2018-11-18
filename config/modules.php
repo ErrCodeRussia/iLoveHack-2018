@@ -31,6 +31,9 @@ if (count($path) < 4) {
         $moduleFilename = MODULES . 'main.php';
         $function = $moduleName . '_' . $action;
     }
+
+    var_dump($moduleFilename);
+    var_dump($function);
 }
 else {
     if ($path[1] == 'users') {
