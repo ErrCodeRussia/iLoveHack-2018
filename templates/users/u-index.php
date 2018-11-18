@@ -25,29 +25,29 @@ else {
     $padding = '';
 }
 
-
-
-switch ($path[3]) {
-    case 'myhackathons':
-        $status_prof = '';
-        $status_hack = 'active';
-        $status_team = '';
-        $status_sett = '';
-    case 'myteam':
-        $status_prof = '';
-        $status_hack = '';
-        $status_team = 'active';
-        $status_sett = '';
-    case 'settings':
-        $status_prof = '';
-        $status_hack = '';
-        $status_team = '';
-        $status_sett = 'active';
-    case '': 
-        $status_prof = 'active';
-        $status_hack = '';
-        $status_team = '';
-        $status_sett = '';
+if (!$path[3]) {
+    $status_prof = 'active';
+    $status_hack = '';
+    $status_team = '';
+    $status_sett = '';
+}
+else if ($path[3] == 'myhackathons') {
+    $status_prof = '';
+    $status_hack = 'active';
+    $status_team = '';
+    $status_sett = '';
+}
+else if ($path[3] == 'myteam') {
+    $status_prof = '';
+    $status_hack = '';
+    $status_team = 'active';
+    $status_sett = '';
+}
+else if ($path[3] == 'settings') {
+    $status_prof = '';
+    $status_hack = '';
+    $status_team = '';
+    $status_sett = 'active';
 }
 
 ?>
