@@ -49,22 +49,29 @@ else {
         }
         else {
             $moduleName = $path[1];
+            $moduleFilename = MODULES . 'users.php';
             
             if (empty($path[2])) {
                 $action = 'index';
+                $function = $moduleName . '_' . $action;
             }
             else if ($path[2] == 'reg') {
                 $action = 'reg';
+                $function = $moduleName . '_' . $action;
             }
             else if ($path[2] == 'auth') {
                 $action = 'auth';
+                $function = $moduleName . '_' . $action;
             }
             else {
-                $action = 'userpage';
+                if ($_SESSION['user_login'] && $_SESSION['user_password']) {
+                    $action = 'userpage';
+                    $function = $moduleName . '_' . $action;
+                }
+                else {
+                    $function = 'access_error';
+                }
             }
-
-            $moduleFilename = MODULES . 'users.php';
-            $function = $moduleName . '_' . $action;
         }
     }
     else if ($path[1] == 'admin') {
