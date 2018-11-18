@@ -17,4 +17,5 @@ function users_auth() {
 
 function users_userpage() {
     echo render('main/navigation.php');
+    echo render('users/userpage/up-index.php');
 }
