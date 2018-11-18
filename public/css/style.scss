@@ -34,7 +34,7 @@ $light-blue: #41dbd9;
         .section__text{
             font-size:2rem;
             height: 50px;
-            margin: 20px 0;
+            margin: 20px 0 10px 0;
         }
         .section__text:before{
             content: "<";
@@ -50,7 +50,7 @@ $light-blue: #41dbd9;
         }
     }
     &__button{
-        margin-top: 10px;
+        margin-top: 20px;
         padding: 10px 40px;
         background: $blue;
         border:none;
@@ -58,6 +58,9 @@ $light-blue: #41dbd9;
         color: $white;
         text-decoration: none;
         text-align: center;
+    }
+    *.action__text{
+        margin-bottom: 25px;
     }
 }
 
@@ -99,11 +102,16 @@ $light-blue: #41dbd9;
     }
 }
 
-.ilovahack{
+.ilovehack{
     &__heading{
         margin:50px 0;
         width: auto;
         align-items: center;
         font-size: 24px;
+    }
+    &__img{
+        width:100px;
+        height: auto;
+        margin: 0 auto 20px 0;
     }
 }

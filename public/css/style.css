@@ -81,7 +81,7 @@
 .section .section__heading .section__text {
   font-size: 2rem;
   height: 50px;
-  margin: 20px 0;
+  margin: 20px 0 10px 0;
 }
 
 .section .section__heading .section__text:before {
@@ -99,7 +99,7 @@
 }
 
 .section__button {
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 10px 40px;
   background: #4E34AF;
   border: none;
@@ -107,6 +107,10 @@
   color: #fefffe;
   text-decoration: none;
   text-align: center;
+}
+
+.section *.action__text {
+  margin-bottom: 25px;
 }
 
 .hackatone {
@@ -161,12 +165,18 @@
   margin-bottom: 20px;
 }
 
-.ilovahack__heading {
+.ilovehack__heading {
   margin: 50px 0;
   width: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: 24px;
+}
+
+.ilovehack__img {
+  width: 100px;
+  height: auto;
+  margin: 0 auto 20px 0;
 }
 /*# sourceMappingURL=style.css.map */

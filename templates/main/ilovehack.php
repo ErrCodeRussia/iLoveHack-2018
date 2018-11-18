@@ -1,13 +1,15 @@
-<section class="page__section--colored section ilovahack">
+<section class="page__section--colored section ilovehack">
     <div class="container">
         <div class="row">
-        <div class="col-12 text-center ilovahack__heading">
+        <div class="col-12 text-center ilovehack__heading">
                 <h2>О iLoveHack</h2>
             </div>
-            <div class="col-12 col-md-6">
-                <img src="" alt="">
+            <div class="col-12 col-md-6 text-center">
+                <img class="ilovehack__img" src="img/award.svg" alt="">
             </div>
-            <div class="col-12 col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae corporis magni voluptatum cumque odio quas, similique, magnam in nulla doloremque dolor qui debitis velit ut, rem eos iure ad.</div>
+            <div class="col-12 col-md-6">
+                <p>Мы скауты проектов и технологий, аналитики, журналисты, комьюнити, специалисты-ученые, эдвайзери, и мы создатели наковальни, на которой куются лучшие технологии мира, мы первая биржа для трейдинга технологий.</p>
+            </div>
         </div>
     </div>
 </section>
