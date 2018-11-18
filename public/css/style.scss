@@ -3,7 +3,7 @@
 
 //Переменные
 $dark: #0d151e;
-$blue: #4E34AF; 
+$blue: rgb(78, 52, 175); 
 $anotherblue: #0A1049; 
 $white: #fefffe; 
 $light-blue: #41dbd9;
@@ -52,15 +52,26 @@ $light-blue: #41dbd9;
     &__button{
         margin-top: 20px;
         padding: 10px 40px;
-        background: $blue;
         border:none;
         border-radius: 2px;
         color: $white;
         text-decoration: none;
         text-align: center;
     }
+    
     *.action__text{
         margin-bottom: 25px;
+    }
+}
+
+.animation__button{
+    background: $blue;
+    background: linear-gradient(45deg, #8834af 0%, #7e34af 25%, #8234af 51%, #4e34af 100%);
+    transition: .2s;
+    &:hover{
+        text-decoration: none;
+        color:$white;
+        transform: scale(1.1);
     }
 }
 

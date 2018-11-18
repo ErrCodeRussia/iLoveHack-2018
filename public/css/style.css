@@ -101,7 +101,6 @@
 .section__button {
   margin-top: 20px;
   padding: 10px 40px;
-  background: #4E34AF;
   border: none;
   border-radius: 2px;
   color: #fefffe;
@@ -111,6 +110,20 @@
 
 .section *.action__text {
   margin-bottom: 25px;
+}
+
+.animation__button {
+  background: #4e34af;
+  background: linear-gradient(45deg, #8834af 0%, #7e34af 25%, #8234af 51%, #4e34af 100%);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.animation__button:hover {
+  text-decoration: none;
+  color: #fefffe;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .hackatone {
