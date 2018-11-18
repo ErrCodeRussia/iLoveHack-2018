@@ -23,5 +23,4 @@ else if (count($path) == 5) {
     else {
         echo render('users/userpage/up-index.php');
     }
-
 }
