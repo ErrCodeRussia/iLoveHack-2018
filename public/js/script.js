@@ -8,6 +8,6 @@ console.log("вход в функцию");
 
 $(document).ready(function () {
     $(CLOSE).on("click", function () {
-        window.location.href = "/";
+        window.location.pathname = "/";
     });
 });

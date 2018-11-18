@@ -2,7 +2,7 @@
 
 <div class="modal modal__registration" id="modal">
     <div class="modal__block">
-        <form class="modal__form col-12" action="/">
+        <form class="modal__form col-12" action="/users/auth/">
             <h4>Вход</h4>
             <img class="modal__close mb-3 p-2" id="close" src="img/close.svg" alt="">
             <!-- Login -->
@@ -31,7 +31,7 @@
 
 <div class="modal modal__registration" id="modal">
     <div class="modal__block">
-        <form class="modal__form col-12" action="/">
+        <form class="modal__form col-12" action="/users/reg/">
             <h4>Регистрация</h4>
             <img class="modal__close mb-3 p-2" id="close" src="img/close.svg" alt="">
             <!-- Login -->
