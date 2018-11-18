@@ -51,6 +51,41 @@ function get_title() {
         $path = explode('/', $url);
     }
 
-    var_dump($path);
+    //var_dump($path);
+
+    if (count($path) < 3) {
+        return 'iLovehack - главная страница';
+    }
+    else if (count($path) == 3) {
+        switch ($path[1]) {
+            case 'hackathons':
+                echo 'Список хакатонов';
+                break;
+            case 'teams':
+                echo 'Список команд';
+                break;
+            case 'users':
+                echo 'Список участников';
+                break;
+            case 'contacts':
+                echo 'Контакты';
+                break;
+        }
+    }
+    else if (count($path) > 3 && $path[1] == 'users') {
+        if (count($path[3]) == '') {
+            return "Профиль пользователя $path[2]";
+        }
+        else {
+            switch ($path[3]) {
+                case 'myhackathons':
+                    return "Хакатоны пользователя $path[2]";
+                case 'myteam':
+                    return "Команда пользователя $path[2]";
+                case 'settings':
+                    return "Настройки пользователя $path[2]";
+            }
+        }
+    }
 
 }

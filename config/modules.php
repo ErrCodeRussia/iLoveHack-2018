@@ -1,13 +1,5 @@
 <?php
 
-$url;
-$cleanURL;
-$path;
-$moduleName;
-$action;
-$moduleFilename;
-$function;
-
 $url = $_SERVER['REQUEST_URI'];
 
 if ($cleanURL = stristr($url, '?', true)) {
@@ -44,6 +36,8 @@ else {
     if ($path[1] == 'users') {
         $moduleName = $path[1];
         $action = empty($path[2]) ? 'index' : $path[2];
+        $moduleFilename = MODULES . 'users.php';
+        $function = $moduleName . '_' . $action;
     }
     else if ($path[1] == 'admin') {
         $moduleName = $path[1];

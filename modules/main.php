@@ -9,7 +9,6 @@ function main_index() {
     echo render('main/action.php');
     echo render('main/ilovehack.php');
     echo render('main/footer.php');
-    echo render('main/modal.php');
 }
 
 function contacts_index() {

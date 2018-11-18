@@ -38,7 +38,7 @@
     
     <script src="/js/script.js"></script>
 
-    <title>iLovehack</title>
+    <title><?= get_title(); ?></title>
 </head>
 
 <body class="page">
