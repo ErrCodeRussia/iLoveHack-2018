@@ -18,7 +18,7 @@
     <div class="d-flex mt-3 flex-wrap">
         <input name="auth_submit" type="submit" class="btn btn-outline-success" value="Отправить">
         <input type="reset" class="btn btn-outline-warning" value="Очистить форму">
-        <input name="back" type="button" class="btn btn-outline-danger" value="Назад">
+        <a href="/" class="btn btn-outline-danger">Назад</a>
     </div>
 </form>
 

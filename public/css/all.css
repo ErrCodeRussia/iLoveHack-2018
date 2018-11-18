@@ -181,7 +181,7 @@
   color: #fefffe;
 }
 
-.form input[type="submit"], .form input[type="reset"], .form input[type="button"] {
+.form input[type="submit"], .form input[type="reset"], .form a {
   margin-right: 15px;
   margin-bottom: 15px;
 }
